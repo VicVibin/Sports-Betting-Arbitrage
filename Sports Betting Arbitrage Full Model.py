@@ -298,7 +298,7 @@ class SBA_Efficient(object):
 
 
 def api():
-    api_key = "a66bb1adbfee86730cd4eb1f365b80cb"
+    api_key = input("Enter your API key: ")
     return api_key
 
 
@@ -314,7 +314,7 @@ def total_checker(wager, api, data):
 
 true = True
 false = False
-data2 = [
+betting_markets = [
     {
         "key": "americanfootball_ncaaf",
         "group": "American Football",
@@ -765,7 +765,7 @@ data2 = [
     }
 ]
 
-api = api()
-wage = 100
+api = str(api())
+Bet_amount = 100
 
-total_checker(wage, api, data2)
+total_checker(Bet_amount, api, betting_markets)
